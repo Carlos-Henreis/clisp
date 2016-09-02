@@ -1,0 +1,51 @@
+Lista de ExercÃ­cios em LISP
+
+1. Qual Ã© o CAR e o CDR de cada uma das listas a seguir?
+(A 17 -3)                     
+((A 5 C) %)          
+((A 5 C) (%))           	   
+(NIL 6 A)
+((A B))                         
+(* ( + 15 (- 6 4)) -3)
+
+2. Escreva as declaraÃ§Ãµes necessÃ¡rias, usando CAR e CDR, para obter os valores seguintes das listas do exercÃ­cio 1:
+(-3)                                                           (-3 -3)
+(C %)                                                          (A C %)
+(5 %)                                                          (5 (%))
+(6 (6))                                                        (6 (6) 6)
+((B) A)                                                        (A ((B) B))
+
+3. Defina uma representaÃ§Ã£o conveniente na forma de lista para um conjunto de sobrenomes juntamente com data de nascimento e endereco de pessoas. 
+  Como seria a recuperaÃ§Ã£o do ano da data de nascimento para essa lista?
+
+4. Escreva uma declaraÃ§Ã£o em LISP para executar cada uma das operaÃ§Ãµes abaixo:
+â€¢ Ler dois nÃºmeros, imprimir sua soma e acrescentar 3 ao resultado. Assim 5 e 11 devem produzir 16 e 19 na tela.
+â€¢ Ler um Ãºnico valor e imprimÃ­-lo como uma lista. Assim o valor 6 deve produzir (6).
+â€¢ Ler dois valores e imprimir sua soma como uma lista. Deste modo 6 e 7 devem produzir a lista (13).
+â€¢ Ler trÃªs nÃºmeros e imprimÃ­-los como uma lista.
+â€¢ Ler trÃªs nÃºmeros e imprimir a soma dos dois primeiros e o produto desta pelo terceiro como uma lista.
+
+5. Escreva uma funÃ§Ã£o que:
+â€¢ Devolva o valor 1 se seu parÃ¢metro for maior que zero, -1 se for negativo, 0 se for zero.
+â€¢ Leia um nome. Se este for o mesmo nome que o dado como parÃ¢metro, a funÃ§Ã£o deve imprimir uma saudaÃ§Ã£o simplese devolver o valor t. Se for diferente, nao deve imprimir nada e devolver nil.
+â€¢ Dados trÃªs parÃ¢metros, se o primeiro for um asterisco, os outros dois serÃ£o multiplicados; se for uma barra, o segundo deve ser dividido pelo terceiro; se nÃ£o for nenhum dos dois, imprima uma mensagem de erro e assuma o valor zero. A funÃ§Ã£o deve devolver como valor o resultado da operaÃ§Ã£o aritmÃ©tica.
+â€¢ Devolva t se seu primeiro parÃ¢metro estiver no conjunto de valores especificado pelo seu segundo e terceiro parÃ¢metros e nil se nÃ£o estiver. Asim: (func-4 5 5 7) = t e (func-4 6 5 7) = nil.
+â€¢ Aceite um valor simples e uma lista como parÃ¢metros. Devolva t se o valor estiver na lista, nil caso nao esteja (este exercÃ­cio pode ser resolvido de forma recursiva - pense um pouco...).
+ 
+6.  Escreva uma funÃ§Ã£o que leia do usuÃ¡rio uma lista de produtos e seus respectivos preÃ§os, colocando-os em uma lista organizada por pares produto-preÃ§o. A entrada de dados Ã© finalizada digitando-se a palavra â€˜fim ao invÃ©s de um nome de produto.
+Utilize o comando loop para implementar o laÃ§o de leitura e defina uma variÃ¡vel global onde a lista ficarÃ¡ armazenada ao fim da leitura.
+Os pares produto-preÃ§o vocÃª pode organizar tanto como um cons, uma sublista ou uma estrutura com campos produto e preÃ§o. A list tem a vantagem de ser extremamente flexÃ­vel: vocÃª pode extender a sua estrutura de dados sem necessitar entrar com os dados de novo. O cons Ã© a forma mais econÃ´mica em termos de memÃ³ria. A estrutura permite uma modelagem elegante. Fica a seu critÃ©rio.
+
+7.  Escreva uma funÃ§Ã£o ou conjunto de funÃ§Ãµes, que, atravÃ©s de um menu de opÃ§Ãµes, realizem as seguintes tarefas:
+a) Pesquisar preÃ§o de um produto: Um ambiente onde o usuÃ¡rio entra com o nome de um produto e o programa ou diz que nÃ£o encontrou o produto ou devolve o preÃ§o.
+b) Mostrar em ordem alfabÃ©tica toda a lista de produtos disponÃ­veis com os respectivos preÃ§os, formatada na tela. A cada 20 produtos o programa deve fazer uma pausa e esperar o usuÃ¡rio teclar alguma coisa para continuar.
+c) Fazer compras: Um ambiente onde o usuÃ¡rio pode entrar com nomes de produtos e quantidades que deseja comprar. Ao final o programa emite uma lista com todos os produtos comprados, total parcial e total final das compras.
+
+8. Escreva uma funÃ§Ã£o (nome) para ler um nome e fazer a verificaÃ§Ã£o: se o nome lido na funÃ§Ã£o for o mesmo nome que foi dado como parÃ¢metro, a funÃ§Ã£o deve imprimir uma saudaÃ§Ã£o simples (â€œOlÃ¡ Fulano!â€) e devolver o valor t; se for diferente, deve imprimir uma mensagem de erro e devolver nil.
+
+9.Escreva uma funÃ§Ã£o para receber trÃªs parÃ¢metros e fazer a verificaÃ§Ã£o: se o primeiro parÃ¢metro for um asterisco, os outros dois serÃ£o multiplicados; se for uma barra, o segundo deve ser dividido pelo terceiro; se nÃ£o for nenhum dos dois, imprima uma mensagem de erro e assuma o valor zero. A funÃ§Ã£o deve devolver
+como valor o resultado da operaÃ§Ã£o aritmÃ©tica.
+
+10. Escreva uma funÃ§Ã£o recursiva para receber um valor e uma lista como parÃ¢metros. Devolva t se o valor estiver na lista, nil caso nÃ£o esteja.
+
+ 

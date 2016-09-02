@@ -1,0 +1,38 @@
+(setq lista1 '(a b (c d) e f))
+
+(setq lista2 '(Av BPS 1303 Pinheirinho Itajubá))
+
+(setq lista3 '(Jorge Paulo Ana Pedro Thiago))
+
+(setq lista4 '(A 17 -3))
+(setq lista5 '((A 5 C) %))
+(setq lista6 '((A 5 C) (%)))
+(setq lista7 '(NIL 6 A))
+(setq lista8 '((A B)))
+(setq lista9 '(* ( + 15 (- 6 4)) -3))
+
+(defun func (list)
+	(print (car list))
+	(print (cdr list))
+)                    
+
+(func lista1)
+(func lista2)
+(func lista3)
+(func lista4)
+(func lista5)
+(func lista6)
+(func lista7)
+(func lista8)
+(func lista9)
+
+(print (cdr (cdr lista4)))
+(print (list  (car (cdr (cdr lista4)))  (car (cdr (cdr lista4)))))
+(print (list (car (cdr (cdr (car lista5)))) (car (cdr lista5))))
+(print (list (car lista4) (car (cdr (cdr (car lista5)))) (car (cdr lista5))))
+(print (list (car (cdr (car lista5))) (car (cdr lista5))))
+(print (list (car (cdr (car lista5))) (cdr lista5)))
+(print (list (car (cdr lista7)) (list (car (cdr lista7)))))
+(print (list (car (cdr lista7)) (list (car (cdr lista7))) (car (cdr lista7))))
+(print (list (cdr (car lista8)) (car (car lista8)) ))
+(print (list (car (car lista8)) (list (cdr (car lista8)) (car (cdr (car lista8))))))
