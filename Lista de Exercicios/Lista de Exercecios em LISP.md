@@ -45,6 +45,6 @@ c) Fazer compras: Um ambiente onde o usuário pode entrar com nomes de produtos 
 
 9.Escreva uma função para receber três parâmetros e fazer a verificaçoes: se o primeiro parÂmetro for um asterisco, os outros dois serão multiplicados; se for uma barra, o segundo deve ser dividido pelo terceiro; se não for nenhum dos dois, imprima uma mensagem de erro e assuma o valor zero. A função deve devolver como valor o resultado da operação aritmética.
 
-10. Escreva uma funÃ§Ã£o recursiva para receber um valor e uma lista como parÃ¢metros. Devolva t se o valor estiver na lista, nil caso nÃ£o esteja.
+10. Escreva uma função recursiva para receber um valor e uma lista como parâmetros. Devolva t se o valor estiver na lista, nil caso não esteja.
 
  
