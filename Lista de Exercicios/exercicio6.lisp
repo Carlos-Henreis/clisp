@@ -1,9 +1,22 @@
+(setq pn '("Produto" preco))
 
-(prog (i) 
-	rpt
-		(print i)
-	(go rpt)
+(defvar lista)
+
+(defun produtos nil
+	(loop
+		(setq prod (read))
+		(setq preco (read))
+		(cond
+			((string= prod "fim")
+				return
+			)
+			(t
+				(append lista '((prod preco)))
+			)
+		) 
+	)
 )
 
-(prog 23)
+
+(carlos 23)
 

@@ -27,10 +27,10 @@
 
 (defun calculadora (op num1 num2)
 	(cond
-		((char-equal op "*")
+		((char-equal op #\*)
 			(* num1 num2)
 		)
-		((char-equal op "/")
+		((char-equal op #\*/)
 			(/ num1 num2)
 		)
 		(T
